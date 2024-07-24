@@ -1,2 +1,1 @@
-name = "Weather Kitty"
-packages = ["os","time","colorama","requests"]
+name = "hearts"
