@@ -1,6 +1,6 @@
 ## TODO:
 ### Icons
-Create icons for `index.html`; and additional pages added in the future, I suppose.
+Create icons for `index.html` and additional pages added in the future.
 
 ### Resume
 Create a clean and interactive interface to showcase current and future projects and accomplishments.
