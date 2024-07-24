@@ -3,9 +3,12 @@
 cs50x pset8 "homepage"
 
 ### 7/23/2024
-added a web app "hearts"
+created a web app "hearts"
 
 ## TODO:
+### Icons
+self-explanitory
+
 ### Resume
 Create a clean and interactive interface to showcase current and future projects and accomplishments.
 Finish CS50x and CS50cy final projects and upload certificates.
