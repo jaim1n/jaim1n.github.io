@@ -7,6 +7,7 @@ with contextlib.suppress(ImportError):
 
 def main():
     user_input = input("make weather kitty say something >")
+    move_cursor_up(20)
     print(bubble_text(user_input))
 
 def bubble_text(text):
@@ -39,7 +40,5 @@ print(fr"""
                  ⠀⠀⢀⠴⠚⠻⢧⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⠞⠉⠉⠓
                  ⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠶⠶⠶⣶⣤⣴⡶⠶⠶⠟⠛⠉
 """)
-
-move_cursor_up(20)
 
 main()
