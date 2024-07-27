@@ -1,4 +1,8 @@
 ## TODO
+- ### Direct Pages For PyScript Apps
+Create folders titled `wk-lite` and `hearts`.
+Drag all files associated with each app to it's appropriate folder.
+
 - ### Icons
 Create icons for `index.html` and additional pages added in the future.
 
