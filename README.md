@@ -1,6 +1,6 @@
 ## TODO
 - ### Favicon
-Create a favicon for homepage and additional pages added in the future.
+Create a favicon for the homepage and additional pages added in the future.
 
 - ### Resume
 Create a clean, interactive interface utilizing skills learned in CS50 Web to showcase current and future projects and accomplishments.
