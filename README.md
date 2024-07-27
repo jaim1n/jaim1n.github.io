@@ -1,9 +1,9 @@
 ## TODO
-- ### Icons
-Create icons for `index.html` and additional pages added in the future.
+- ### Favicon
+Create a favicon for homepage and additional pages added in the future.
 
 - ### Resume
-Create a clean and interactive interface utilizing skills learned in CS50 Web to showcase current and future projects and accomplishments.
+Create a clean, interactive interface utilizing skills learned in CS50 Web to showcase current and future projects and accomplishments.
 
 Upload certificates to `/assets/certificates/`.
 
