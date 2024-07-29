@@ -24,11 +24,11 @@
           <p>In computer memory, each character in a string is stored at a unique memory address. The first character of a string is stored at a specific memory address, and each subsequent character is stored at the next memory address. For example, if you submitted "Hello" in the text field above, the character 'H' was stored at <code>0x0</code> in this case, so 'e' would be at <code>0x1</code>, 'l' at <code>0x2</code>, and so on. Strings in many programming languages, like C, end with a special character called a null terminator (<code>\0</code>). This null terminator is stored at the memory address immediately following the last character of the string. It signals the end of the string. After the null terminator, the next memory address can be used to store the beginning of another string or other data.</p>
           <p>To illustrate, here is how "Hello" would look in memory if it was stored at <code>0x0</code>:</p>
           <p><strong><code>0x0</code>:</strong> 'H'</p>
-          <p><strong><code>0x1</code>>:</strong> 'e'</p>
-          <p><strong><code>0x2</code>>:</strong> 'l'</p>
-          <p><strong><code>0x3</code>>:</strong> 'l'</p>
-          <p><strong><code>0x4</code>>:</strong> 'o'</p>
-          <p><strong><code>0x4</code>>:</strong> <code>\0</code> (null terminator)</p>
+          <p><strong><code>0x1</code>:</strong> 'e'</p>
+          <p><strong><code>0x2</code>:</strong> 'l'</p>
+          <p><strong><code>0x3</code>:</strong> 'l'</p>
+          <p><strong><code>0x4</code>:</strong> 'o'</p>
+          <p><strong><code>0x4</code>:</strong> <code>\0</code> (null terminator)</p>
           <p>When you call this string, the system reads characters starting from <code>0x0</code> until it encounters the null terminator at <code>0x5</code>, ensuring it only processes the intended 5 characters. The next available address for new data would be <code>0x6</code>. This structure helps the system know where each string ends and where the next piece of data begins.</p>
           <p>A buffer overflow happens when data surpasses the allocated buffer size and spills into adjacent memory locations. In this demonstration, the overflow from <code>0x0</code> into <code>0x12</code> is deliberately designed to show how such vulnerabilities can manifest in real programs. It demonstrates what could happen if a buffer, intended to hold up to 16 characters, is manipulated to accept more data than it should. When writing software, programmers must take precautions to prevent such vulnerabilities, such as implementing code that restricts user input to the intended size and closing any backdoors that could be exploited to bypass these measures.</p>
       </div>
