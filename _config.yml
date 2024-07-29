@@ -20,13 +20,10 @@
 
 title: jaim1n's webpage
 email: jaim1n@icloud.com
-domain: jaim1n.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: "https://jaim1n.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/jaim1n.github.io/" # the subpath of your site, e.g. /blog
 github_username:  jaim1n
 
 # Build settings
-remote_theme: pages-themes/primer@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
