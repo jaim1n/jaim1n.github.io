@@ -1,9 +1,9 @@
 ## TODO
 - ### Theme
-Dark, minimalist theme.
+  Dark, minimalist theme.
 
 - ### Favicons
-Create favicons for homepage.
+  Create favicons for homepage.
 
 - ### Resume
-Text fades in from left to right.
+  Text fades in from left to right.
