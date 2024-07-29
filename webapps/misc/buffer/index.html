@@ -6,6 +6,32 @@
     <title>Buffer Overflow!</title>
   </head>
   <body>
-    <p>Coming soon.</p>
+    <script src="./scripts.js"></script>
+    <div class="container">
+      <h1>Buffer Overflow Demonstration</h1>
+      <p>A buffer overflow occurs when a program writes more data to a buffer (a temporary storage container for data) than it can hold. This extra data can overwrite adjacent memory, potentially leading to unexpected behavior, such as crashes, and security vulnerabilities. Buffer overflows are often exploited by hackers to execute arbitrary code or gain unauthorized access to systems.</p>
+      <p>This program was made to help demonstrate this type of attack. Below is a text field that is requesting you, the user, to enter <em>up to</em> 16 characters. For the sake of this demonstration, I have deliberately left out any code that would limit the amount of text you can submit. <b>Feel free to start with your name or a short word and gradually lengthen your input to see how the buffer overflow works in action.</b></p>
+      <form id="overflowForm" method="post" action="/">
+          <label for="userInput">Enter up to 16 characters:</label>
+          <input type="text" id="userInput" name="userInput" maxlength="256">
+          <button type="submit">Submit</button>
+      </form>
+      <div class="output">
+          <p><strong>0x0:</strong> <span id="firstAddress"></span></p>
+          <p><strong>0x12:</strong> <span id="secondAddress">PREDEFINED_DATA</span></p>
+          <h2>Explanation</h2>
+          <p>Memory addresses in computers are often represented using hexadecimal (base-16) notation. This is because memory is typically organized in powers of 2, and hexidecimal makes it easier to read and interpret these addresses. Unlike the decimal system (base-10) which uses ten digits (0-9), hexidecimal uses sixteen digits: 0-9 and the letters A-F, where A represents 10, B represents 11, and so on up to F, which represents 15. The memory addresses used above are the hexidecimal equivalents of the numbers 0 and 17.</p>
+          <p>In computer memory, each character in a string is stored at a unique memory address. The first character of a string is stored at a specific memory address, and each subsequent character is stored at the next memory address. For example, if you submitted "Hello" in the text field above, the character 'H' was stored at 0x0 in this case, so 'e' would be at 0x1, 'l' at 0x2, and so on. Strings in many programming languages, like C, end with a special character called a null terminator (\0). This null terminator is stored at the memory address immediately following the last character of the string. It signals the end of the string. After the null terminator, the next memory address can be used to store the beginning of another string or other data.</p>
+          <p>To illustrate, here is how "Hello" would look in memory if it was stored at 0x0:</p>
+          <p><strong>0x0:</strong> 'H'</p>
+          <p><strong>0x1:</strong> 'e'</p>
+          <p><strong>0x2:</strong> 'l'</p>
+          <p><strong>0x3:</strong> 'l'</p>
+          <p><strong>0x4:</strong> 'o'</p>
+          <p><strong>0x5:</strong> \0 (null terminator)</p>
+          <p>When you call this string, the system reads characters starting from 0x0 until it encounters the null terminator at 0x5, ensuring it only processes the intended 5 characters. The next available address for new data would be 0x6. This structure helps the system know where each string ends and where the next piece of data begins.</p>
+          <p>A buffer overflow happens when data surpasses the allocated buffer size and spills into adjacent memory locations. In this demonstration, the overflow from 0x0 into 0x12 is deliberately designed to show how such vulnerabilities can manifest in real programs. It demonstrates what could happen if a buffer, intended to hold up to 16 characters, is manipulated to accept more data than it should. When writing software, programmers must take precautions to prevent such vulnerabilities, such as implementing code that restricts user input to the intended size and closing any backdoors that could be exploited to bypass these measures.</p>
+      </div>
+    </div>
   </body>
 </html>
