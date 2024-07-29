@@ -2,14 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #eeeeee;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 1rem; 
 }
 
 @keyframes fadeIn {
